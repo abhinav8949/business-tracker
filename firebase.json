@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "business-tracker-c5f17",
+    "public": "dist/business-tracker/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
