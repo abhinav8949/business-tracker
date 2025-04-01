@@ -1,0 +1,21 @@
+<!-- Gallery Section -->
+<section id="gallery" class="gallery section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Gallery</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Swiper Container -->
+      <swiper-container loop="true" speed="1000" centered-slides="true" autoplay-delay="800" slides-per-view="auto"
+        [breakpoints]="breakpoints" class="align-items-center">
+        <swiper-slide *ngFor="let image of galleryImages">
+          <a class="glightbox" data-gallery="images-gallery" routerLink="{{ image }}">
+            <img [src]="image" class="img-fluid" alt="Gallery Image">
+          </a>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </section>
+  <!-- /Gallery Section -->
